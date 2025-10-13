@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu">☰</div>
+    <h1>NOVA</h1>
+    <div class="actions">
+      <button class="login">Anmelden</button>
+      <div class="icon">🛒</div>
+      <div class="icon">⚙️</div>
+    </div>
+  </header>
+
+  <section class="products">
+    <div class="product" data-name="NOVA Bären Hoodie" data-price="59.99€"
+         data-sizes="S,M,L,XL" data-colors="Weiß,Schwarz,Grau"
+         data-img="https://i.imgur.com/Y8A4fPq.png">
+      <img src="https://i.imgur.com/Y8A4fPq.png" alt="NOVA Bären Hoodie">
+      <h3>59.99€</h3>
+      <p>NOVA Bären Hoodie<br>Weiß</p>
+      <div class="hover-info">
+        <p><strong>Farben:</strong> Weiß, Schwarz, Grau</p>
+        <p><strong>Größen:</strong> S, M, L, XL</p>
+      </div>
+    </div>
+
+    <div class="product" data-name="NOVA Star Hoodie" data-price="59.99€"
+         data-sizes="S,M,L,XL" data-colors="Weiß,Lila,Schwarz"
+         data-img="https://i.imgur.com/qdlJHnM.png">
+      <img src="https://i.imgur.com/qdlJHnM.png" alt="NOVA Star Hoodie">
+      <h3>59.99€</h3>
+      <p>NOVA Star Hoodie<br>Weiß</p>
+      <div class="hover-info">
+        <p><strong>Farben:</strong> Weiß, Lila, Schwarz</p>
+        <p><strong>Größen:</strong> S, M, L, XL</p>
+      </div>
+    </div>
+
+    <div class="product" data-name="NOVA Shirt" data-price="39.99€"
+         data-sizes="S,M,L,XL" data-colors="Weiß,Schwarz"
+         data-img="https://i.imgur.com/d5xYyYj.png">
+      <img src="https://i.imgur.com/d5xYyYj.png" alt="NOVA Shirt">
+      <h3>39.99€</h3>
+      <p>NOVA Shirt<br>Weiß</p>
+      <div class="hover-info">
+        <p><strong>Farben:</strong> Weiß, Schwarz</p>
+        <p><strong>Größen:</strong> S, M, L, XL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-name"></h2>
+      <p id="modal-price"></p>
+      <p id="modal-colors"></p>
+      <p id="modal-sizes"></p>
+      <button class="buy-btn">In den Warenkorb</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
