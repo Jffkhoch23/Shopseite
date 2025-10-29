@@ -12,10 +12,36 @@
     <h1>NOVA</h1>
     <div class="actions">
       <button class="login">Anmelden</button>
-      <div class="icon">🛒</div>
-      <div class="icon">⚙️</div>
+      <div class="icon cart">🛒</div>
+      <div class="icon settings">⚙️</div>
     </div>
   </header>
+
+  <!-- Seitenmenü (Kategorieauswahl) -->
+  <div class="side-menu" id="sideMenu">
+    <h3>Kategorien</h3>
+    <ul>
+      <li>Pullover</li>
+      <li>Hosen</li>
+      <li>T-Shirts</li>
+    </ul>
+  </div>
+
+  <!-- Einkaufswagen -->
+  <div class="cart-panel" id="cartPanel">
+    <h3>🛒 Warenkorb</h3>
+    <p>Ihr Warenkorb ist leer (Demo).</p>
+  </div>
+
+  <!-- Einstellungen -->
+  <div class="settings-popup" id="settingsPopup">
+    <h3>⚙️ Einstellungen</h3>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
 
   <section class="products">
     <div class="product" data-name="NOVA Bären Hoodie" data-price="59.99€"
@@ -55,7 +81,7 @@
     </div>
   </section>
 
-  <!-- Modal -->
+  <!-- Modal (Produktdetails) -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -67,6 +93,9 @@
       <button class="buy-btn">In den Warenkorb</button>
     </div>
   </div>
+
+  <!-- Popup beim Hinzufügen -->
+  <div id="addedPopup" class="added-popup">Zum Warenkorb hinzugefügt ✅</div>
 
   <script src="script.js"></script>
 </body>
